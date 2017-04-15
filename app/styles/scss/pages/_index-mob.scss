@@ -1,0 +1,77 @@
+.App-body .App-body-list {
+  margin: 20px;
+.header {
+  display: none;
+}
+.list .item {
+  width: 100%;
+  justify-content: flex-start;
+  &>div:first-child{
+    width: 100%;
+  }
+  &>div:last-child{
+    width: 100%;
+    padding-top: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    .graphs{width: 100%; justify-content: flex-start;}
+  }
+  .button{width:100%; margin-left: 0; padding: 10px 0px;margin-top: 20px; font-size: 18px; justify-content: center;}
+
+  flex-direction: column;
+}
+}
+.App-body .App-body-actions {
+  flex-direction: column;
+  margin: 20px;
+
+  .right-actions{
+    width: 100%;
+    justify-content: space-around;
+
+    flex-direction: column;
+    .button{
+      margin-top: 20px;
+      width: auto;
+      font-size: 20px;
+      display: table-caption;
+      margin-left: 0;
+      svg {width: 45px; float: right;}
+    }
+
+  }
+
+  .left-actions{
+    width: 100%;
+    justify-content: space-around;
+    .toggle{
+      width: 20%;
+      p{
+        padding: 5px 8px;
+        svg{
+          width: 30px;
+        }
+      }
+    }
+    .dropdown{
+      width: 80%;
+      .custom-select-wrapper {
+        width: 100%
+      }
+        .custom-select-wrapper select {
+          display: none;
+        }
+        .custom-select {
+         width: 100%
+        }
+          .custom-select-trigger {
+            font-size: 16px;
+            width: auto;
+          }
+          .custom-option{
+            font-size: 14px;
+          }
+   }
+  }
+
+}

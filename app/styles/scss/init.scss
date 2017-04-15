@@ -1,0 +1,17 @@
+//global things
+@import 'general/_reset';
+@import 'layout/_main';
+
+@media (min-width: 1280px) {
+  @import 'pages/_index';
+}
+
+@media
+  (min-width: 768px){
+    @import 'pages/_index';
+}
+
+@media (min-width:544px) and (max-width: 767px){
+ @import 'pages/_index';
+ @import 'pages/_index-mob'
+}
